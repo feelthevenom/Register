@@ -15,8 +15,6 @@ const dbPassword =process.env.PASSWORD
 mongoose.connect(`mongodb+srv://${dbUsername}:${dbPassword}@cluster0.f3kxab5.mongodb.net/?retryWrites=true&w=majority`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  ssl: true,
-  sslValidate: false, // Set to true once you confirm the SSL configuration is correct
 });
 
 // Serve static files from the 'public' folder
